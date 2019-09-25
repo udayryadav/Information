@@ -1,3 +1,18 @@
 SAGA Design pattern
-Event Driven service choreography 
+Event Driven service choreography (Microservices uses)
 `BPMN` --> Provide certain workflow to handle business process.
+
+
+Problem in microservices
+  1. Sync of data between different database servers (overcome using messaging pattern)
+  2. Event driven architecture
+  3. Scaling side
+  4. Security (API Gateway provides different services to overcome sercurity issue)
+  5. Versioning 
+  6. API Discovery (Netflix Eureka)
+  
+  How service discovery is working ?
+  
+  7. Data Staleness - The database should be always updated to given recent data. the API will fetch data from the recent and update database.
+  
+  8. Debugging and Logging - There are multiple solution for this, by pushing log messages to an correlation ID can be provided by the client in order to achive this.
